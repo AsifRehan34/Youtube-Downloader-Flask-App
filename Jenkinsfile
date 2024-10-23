@@ -20,7 +20,7 @@ pipeline{
         {
             steps{
                 echo "pushing to docker hub"
-                withCredentials([usernamePassword(credentialsId:"Docker-Hub",passwordVaribale:"DockerHubPass",usernameVariable:"DockerHubUser")])
+                withCredentials([usernamePassword(credentialsId:"Docker-Hub",passwordVariable:"DockerHubPass",usernameVariable:"DockerHubUser")])
                 {
                     sh " docker tag youtube-downloader-flask-app ${env.DockerHubUser}/Youtube-video-download-app:latest"
                     sh " docker login -u ${env.DockerHubUser} -p ${env.DockerHubPass}"
