@@ -1,5 +1,5 @@
 services:
   web:
-    image: asifrehan12/my-notes-app:latest 
+    image: asifrehan12/youtube-video-download-app:latest
     ports:
-      - "8000:8000"
+      - "5000:5000"
