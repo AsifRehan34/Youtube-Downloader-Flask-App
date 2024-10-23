@@ -13,7 +13,7 @@ pipeline{
         {
             steps{
                 echo "Build the docker image"
-                sh " docker build -t Youtube-video-download-app ."
+                sh " docker build -t youtube-video-download-app ."
             }
         }
         stage("Push to Docker Hub")
