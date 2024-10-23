@@ -33,6 +33,7 @@ pipeline{
             steps
             {
                 echo "Deploying the docker container to AWS "
+                sh " docker-compose down && and docker-compose up -d"
             }
         }
     }
