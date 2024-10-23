@@ -33,7 +33,8 @@ pipeline{
             steps
             {
                 echo "Deploying the docker container to AWS "
-                sh " docker run -d -p 5000:5000 asifrehan12/youtube-video-download-app:latest"
+                // sh " docker run -d -p 5000:5000 asifrehan12/youtube-video-download-app:latest"
+                sh " docker-compose down && docker-compose up -d "
             }
         }
     }
