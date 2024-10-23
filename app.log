@@ -1,0 +1,42 @@
+2024-10-23 23:03:53,281 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.18:5000
+2024-10-23 23:03:53,296 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-23 23:04:28,320 - INFO - 127.0.0.1 - - [23/Oct/2024 23:04:28] "GET / HTTP/1.1" 200 -
+2024-10-23 23:04:30,470 - INFO - 127.0.0.1 - - [23/Oct/2024 23:04:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 23:04:30,470 - INFO - 127.0.0.1 - - [23/Oct/2024 23:04:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-23 23:04:41,771 - DEBUG - Attempting to download video from URL: https://www.youtube.com/watch?v=LUplp2WvXyc
+2024-10-23 23:04:41,771 - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2024-10-23 23:04:48,023 - DEBUG - applying descrambler
+2024-10-23 23:04:48,023 - DEBUG - finding initial function name
+2024-10-23 23:04:48,030 - DEBUG - Pattern failed: ytplayer\.config\s*=\s*
+2024-10-23 23:04:48,030 - DEBUG - Could not parse object.
+2024-10-23 23:04:48,188 - DEBUG - finished regex search, matched: (/s/player/[\w\d]+/[\w\d_/.]+/base\.js)
+2024-10-23 23:04:54,308 - DEBUG - finding initial function name
+2024-10-23 23:04:55,543 - DEBUG - finished regex search, matched: (?P<sig>[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*{\s*a\s*=\s*a\.split\(\s*""\s*\)
+2024-10-23 23:04:55,543 - DEBUG - getting transform plan
+2024-10-23 23:04:55,543 - DEBUG - matched regex search: yCa=function\(\w\){[a-z=\.\(\"\)]*;(.*);(?:.+)}
+2024-10-23 23:04:55,543 - DEBUG - getting transform object
+2024-10-23 23:04:55,543 - DEBUG - Finding throttling function name
+2024-10-23 23:04:55,552 - DEBUG - finished regex search, matched: \([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])\([a-z]\)
+2024-10-23 23:04:55,568 - DEBUG - Finding throttling function name
+2024-10-23 23:04:55,584 - DEBUG - finished regex search, matched: \([a-z]\s*=\s*([a-zA-Z0-9$]+)(\[\d+\])\([a-z]\)
+2024-10-23 23:04:55,584 - DEBUG - signature found, skip decipher
+2024-10-23 23:04:55,584 - DEBUG - signature found, skip decipher
+2024-10-23 23:04:55,584 - DEBUG - signature found, skip decipher
+2024-10-23 23:04:55,584 - DEBUG - signature found, skip decipher
+2024-10-23 23:04:55,584 - DEBUG - signature found, skip decipher
+2024-10-23 23:04:55,584 - DEBUG - signature found, skip decipher
+2024-10-23 23:04:55,584 - DEBUG - signature found, skip decipher
+2024-10-23 23:04:55,584 - DEBUG - signature found, skip decipher
+2024-10-23 23:04:55,584 - DEBUG - signature found, skip decipher
+2024-10-23 23:04:55,584 - DEBUG - signature found, skip decipher
+2024-10-23 23:04:55,584 - DEBUG - signature found, skip decipher
+2024-10-23 23:04:55,584 - DEBUG - signature found, skip decipher
+2024-10-23 23:04:55,907 - DEBUG - downloading (14471856 total bytes) file to C:\Users\wwwre\OneDrive\Desktop\pythonProject\youtube-video-downloader\Dhol Mahya  Talib Hussain Dard.mp4
+2024-10-23 23:05:12,892 - DEBUG - download remaining: 5034672
+2024-10-23 23:05:19,849 - DEBUG - download remaining: 0
+2024-10-23 23:05:19,849 - DEBUG - download finished
+2024-10-23 23:05:19,852 - DEBUG - Video downloaded to: C:\Users\wwwre\OneDrive\Desktop\pythonProject\youtube-video-downloader\Dhol Mahya  Talib Hussain Dard.mp4
+2024-10-23 23:05:19,947 - INFO - 127.0.0.1 - - [23/Oct/2024 23:05:19] "POST /download HTTP/1.1" 200 -
