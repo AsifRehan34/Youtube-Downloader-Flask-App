@@ -22,9 +22,9 @@ pipeline{
                 echo "pushing to docker hub"
                 withCredentials([usernamePassword(credentialsId:"Docker-Hub",passwordVariable:"DockerHubPass",usernameVariable:"DockerHubUser")])
                 {
-                    sh " docker tag youtube-downloader-flask-app ${env.DockerHubUser}/youtube-video-download-app:latest"
+                    sh " docker tag youtube-video-download-app ${env.DockerHubUser}/youtube-video-download-app:latest"
                     sh " docker login -u ${env.DockerHubUser} -p ${env.DockerHubPass}"
-                    sh "docker push ${env.DockerHubUser}/Youtube-video-download-app:latest"
+                    sh "docker push ${env.DockerHubUser}/youtube-video-download-app:latest"
                 }
             }
         }

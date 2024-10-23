@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   youtube_downloader:
-    build: .
+    image: asifrehan12/youtube-video-download-app:latest 
     ports:
       - "5000:5000"
     volumes:
