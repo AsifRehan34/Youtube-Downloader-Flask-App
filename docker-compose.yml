@@ -1,11 +1,5 @@
-version: '3.8'
-
 services:
-  youtube_downloader:
-    image: asifrehan12/youtube-video-download-app:latest 
+  web:
+    image: asifrehan12/my-notes-app:latest 
     ports:
-      - "5000:5000"
-    volumes:
-      - .:/app
-    environment:
-      FLASK_ENV: development
+      - "8000:8000"
